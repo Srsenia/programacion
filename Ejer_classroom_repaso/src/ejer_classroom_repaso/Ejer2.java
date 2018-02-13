@@ -13,16 +13,16 @@ import java.util.Scanner;
  */
 public class Ejer2 {
 
-     static void llegir(float num[],int x){
+     static void llegir(int num[],int x){
         Scanner n=new Scanner(System.in);
         for(int i=0;i<x;i++){
             System.out.print("introduzca un numero decimal");
-            num[i]=n.nextFloat();
+            num[i]=n.nextInt();
         }
         
     }
     
-    static float imprimir(float num[],int x){
+    static float imprimir(int num[],int x){
         
         for(int i=x-1;i>0;i++){
             System.out.print(num[i]);
@@ -39,7 +39,7 @@ public class Ejer2 {
         System.out.print("escribe n");
         x=n.nextInt();
         
-        float num[]=new float[x];
+        int num[]=new int[x];
         
         llegir(num,x);
         imprimir(num,x);
